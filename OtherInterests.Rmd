@@ -1,0 +1,34 @@
+---
+title: "Other Interests"
+description: |
+  A place to keep track of odds and ends.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### My Scientific Interests on the Backburner
+Here's a list of some unpublished work or aspirational projects that I'm trying to find time for:
+
+* I conducted a preliminary study with not-so-good data on the time course of C-reactive protein in human serum of cancer patients. I would like to investigate this further in case this can lead to the optimisation of treatment times.
+
+* I have Python routines written for JuPYTeR notebooks that assist the non-specialist in the testing of model structures for structural global identifiability (SGI).
+
+* The progression of an infectious disease through a population could behave like a linear switching system if some intervention (e.g. lockdown, mask wearing) happened at a particular point. I would like to apply my methods to such a system.
+
+* Sometimes Maple is unable to simplify complex expressions. Some approaches to the problem resulted from my analysis of linear switching systems. 
+
+* I would like to further explore visualisations that can help the user understand when a model structure lacks the property of SGI.
+
+### Various Other Interests and Links
+
+* The ["Theory of Living Systems"](https://www.theoryoflivingsystems.org/) webcast seminar series is good.
+
+* The Environmental Science Meeting for Australian Research Teams ([EnviSMART](https://alec.science.unimelb.edu.au/sample-page/events/)) is a monthly online seminar series by environmental science researchers.
+
+* The homepage of the "Centre for Anthropogenic Pollution Impact and Management" ([CAPIM](https://capim.unimelb.edu.au/)) at The University of Melbourne.
+
+
+* Python package SymPy is great for open-source symbolic algebra.
+
