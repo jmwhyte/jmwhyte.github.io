@@ -21,6 +21,8 @@ navbar:
       href: EmergingChems.html
     - text: "Other Interests"
       href: OtherInterests.html
+    - text: "Pubs"
+      href: Pubs.html
     - text: "About"
       href: about.html
 #    - text: "added"
