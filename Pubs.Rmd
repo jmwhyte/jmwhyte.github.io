@@ -1,0 +1,16 @@
+---
+title: "Pubs"
+description: | 
+  Things relating to pubs.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Publications
+Coming soon (once I have time to do this effectively).
+In a hurry? See the "Google Scholar" button on the "About" tab.
+
+### Public bars
+Going soon.^[Once lockdown ends...]
