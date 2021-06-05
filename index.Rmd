@@ -5,9 +5,13 @@ description: |
   
   I'm an Australian applied mathematician with varied analytical and computational interests, driven by applications.^[I also quite like footnotes.] <br>
   
-  <span style="color:DarkGoldenrod;"> Why 'Synthesis'? </span> I'm an inter-disciplinary researcher, always on the look out for good ideas from other fields. <br> 
+  <span style="color:DarkGoldenrod;"> Why 'Synthesis'? </span> <br>
+  I'm an inter-disciplinary researcher, always on the lookout for good ideas from other fields. <br> 
   
-  My projects have led to new methodologies and software. 
+  My projects have led to new methodologies and software. <br>
+  
+  People seem easily discouraged by maths. So, I aim to present my work in talks and posters in a manner that combines information with a memorable flourish. <br> 
+  Perhaps you saw my poster with a "jigsaw", or the one with a 3D-printed error surface?^[No? Perhaps I shall add them to the appropriate tab in the near future.]
   
 site: distill::distill_website
 ---
