@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Publications
 Coming soon.^[Well, once I am aware of how to do this efficiently.]<br>
-In a hurry? See the "Google Scholar" button under the "About" tab.
+In a hurry? See my ["Google Scholar" profile](https://scholar.google.com/citations?user=vLenKQMAAAAJ&hl=en).
 
 ### Public bars
 Going soon.^[Once lockdown ends...]
