@@ -1,7 +1,6 @@
 ---
 title: "Interests in Emerging Chemicals"
-description: |
-   How to evaluate risk when chemical data is sparse?    
+description: "How to evaluate risk when chemical data is sparse?    \n"
 ---
 
 ```{r setup, include=FALSE}
@@ -25,7 +24,25 @@ My approach is to consider whether published scientific literature can provide c
  Whyte, J. M., **"On Using ‘Emerging Interest’ in Scientific Literature to Inform Chemical Risk Prioritisation"**, accepted, to appear in the proceedings of the 10th International Environmental Modelling and Software Society Congress, Sept 14-18 2020, Brussels, Belgium. [Pre-publication, post-review version here](https://www.researchgate.net/publication/344293743_On_Using_'Emerging_Interest'_in_Scientific_Literature_to_Inform_Chemical_Risk_Prioritisation). <br>
 **Summary:** This conference paper laid the groundwork for the Project 1 report above. The results showed that my approach could anticipate chemicals of concern earlier than a regulator could. This result has encouraged further research in this area. 
 
- Whyte, J. M. and Robinson, A. P., **“Outcome 2: Automating the extraction of chemical prevalences from a bibliographic database to estimate ‘emerging concern’ — a pilot study”**, CEBRA report for NSW Environment Protection Authority, January 2020.
+ Whyte, J. M. and Robinson, A. P., **“Outcome 2: Automating the extraction of chemical prevalences from a bibliographic database to estimate ‘emerging concern’ — a pilot study”**, CEBRA report for NSW Environment Protection Authority, January 2020. <br>
+**Summary**: The New South Wales Environment Protection Authority (NSW EPA) is overseeing the development of a Chemical Prioritisation Framework (CPF) that intends to direct regulatory attention to potential risks to human and animal welfare. The framework requires the “emerging concern” associated with candidate chemicals as an input. Initially the emerging concern associated with a given chemical was derived from the number of publications in the Taylor and Francis online portal referring to that chemical over a calendar year ("hits"), for a period of years. This limited the search for hits to those by only one publisher, and hit counts were drawn manually. <br>
+In this pilot study we consider some extensions and refinements. We investigated these in a systematic manner that is reproducible and largely automated. We achieved this by using R code to obtain hit counts over calendar years from the Web of Science core collection API (henceforth, WOS).
+
+Our methodology can:
+
+<ul>
+<li>recognise certain trends in scientific publication data, and,</li>
+<li>discern a point in time at which there is a sharp increase in the attention given by the scientific literature to the harmful effects of a chemical—the type of event one could associate with “emerging concern”.</li>
+</ul>
+We also intended to associate chemicals with mentions of major NSW population centres in WoS, however data was scant.
+<a href="NSW_EPA_Outcome2_report.pdf">Download File</a>
+
+Significantly, this study stimulated ideas that were profitably explored in "On Using 'Emerging Interest' in Scientific Literature to Inform Chemical Risk Prioritisation", listed above. 
+
+
+
+
+
  
 #### Work in progress
 Whyte, J. M., **"Exploiting scientific publication trends for chemical risk management"** <br>
