@@ -46,8 +46,7 @@ Significantly, this study stimulated ideas that were profitably explored in "On 
  
 #### Work in progress
 Whyte, J. M., **"Exploiting scientific publication trends for chemical risk management"** <br>
-This paper will consider features of publication keywords over time. I will likely present some
-preliminary results at the "Early Career & Studenet Statisticians Conference", July 26 -- August 1st 2021.
+This paper will consider features of publication keywords over time. 
 
 #### Recent talks on emerging chemicals
 **“On Using ‘Emerging Interest’ in Scientific Publications to Inform Chemical Risk Prioritisation (with updates)”**, invited oral presentation, The Australian Laboratory for Emerging Contaminants’ “Emerging Contaminants Workshop” (School of Chemistry, University of Melbourne, online), Oct 27th 2020.
