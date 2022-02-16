@@ -455,7 +455,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -2036,7 +2036,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.8.5/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2104,7 +2104,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Interests in Mathematical/Statistical Biology</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>My PhD relates to the use of flow-cell optical biosensors to indirectly study the dynamics of biomolecular interactions. This led to interest in variety of problems. <br></p></p>
+<p><p>My PhD relates to the use of flow-cell optical biosensors to
+indirectly study the dynamics of biomolecular interactions. This led to
+interest in variety of problems. <br></p></p>
 </div>
 
 
@@ -2117,62 +2119,196 @@ Figure 1: My work feels like this sometimes…
 </p>
 </div>
 </div>
-<h2 id="structural-global-identifiability-sgi">Structural global identifiability (SGI)? <br></h2>
-<p>This concept lurks wherever we wish to “calibrate” a model structure (estimate parameters from data) so that we can proceed to make predictions. <br></p>
-<p>Often we can represent a physical system by a structure of “state-space” systems. These relate state variables (<strong>x</strong>), observables (<strong>y</strong>) and possibly inputs (<strong>u</strong>) through parametric expressions in the parameters <span class="math inline">\(\boldsymbol{\theta}\)</span>: <span class="math display">\[\begin{gather}
-\dot{\bf x}({\bf x}, {\bf u}, t; {\boldsymbol{\theta}}) = {\bf f}({\bf x}, {\bf u}, t; {\boldsymbol{\theta}}) \, , \quad {\bf x}(0) = {\bf x_{0}}(\boldsymbol{\theta}) \\
-{\bf y}({\bf x}, {\bf u}, t; {\boldsymbol{\theta}}) = {\bf g}({\bf x}, {\bf u}, t; {\boldsymbol{\theta}}) \, .
-\end{gather}\]</span> Suppose we have an infinite, error-free record of data, and a correctly specified model structure (composed of parametric relationships between variables). Is it possible to obtain a unique estimate for each parameter? If not, and if alternative parameter estimates produce very different predictions, we cannot make predictions with confidence. This may cause our study to be an unproductive use of time, effort, and resources.</p>
-<p>I have considered the problem for model structures used in various biological settings.</p>
-<h2 id="analysis-of-linear-switching-systems-representing-e.g.-biosensor-data">Analysis of linear switching systems representing (e.g.) biosensor data: <br></h2>
-<p>Optical biosensor experiments<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> provide a means of indirectly observing the interactions of biomolecular species in real time. The experimental setup features an <em>immobilised analyte</em> bound to a sensor surface, and an <em>analyte</em> in solution made to flow over this surface. A series of “kinetic” experiments aim to determine the rate constants of interactions. Experiments typically consist of two or more phases, delineated by a change in experimental conditions. For example, in the <em>association</em> phase, some concentration of analyte is made to flow over the surface for a specified time. In the <em>dissociation</em> phase, the solution is changed to buffer (zero analyte concentration).</p>
-<p>In certain cases, the experimental output is appropriately modelled by a linear switching system (LSS). A LSS is a collection of linear time-invariant state-space systems, with a switch that determines which system is in effect at each time point. A schematic of the LSS output is shown in Figure <a href="#fig:BIAcore-response-sample">2</a> below.</p>
+<h2 id="structural-global-identifiability-sgi">Structural global
+identifiability (SGI)? <br></h2>
+<p>This concept lurks wherever we wish to “calibrate” a model structure
+(estimate parameters from data) so that we can proceed to make
+predictions. <br></p>
+<p>Often we can represent a physical system by a structure of
+“state-space” systems. These relate state variables
+(<strong>x</strong>), observables (<strong>y</strong>) and possibly
+inputs (<strong>u</strong>) through parametric expressions in the
+parameters <span class="math inline">\(\boldsymbol{\theta}\)</span>:
+<span class="math display">\[\begin{gather}
+\dot{\bf x}({\bf x}, {\bf u}, t; {\boldsymbol{\theta}}) = {\bf f}({\bf
+x}, {\bf u}, t; {\boldsymbol{\theta}}) \, , \quad {\bf x}(0) = {\bf
+x_{0}}(\boldsymbol{\theta}) \\
+{\bf y}({\bf x}, {\bf u}, t; {\boldsymbol{\theta}}) = {\bf g}({\bf x},
+{\bf u}, t; {\boldsymbol{\theta}}) \, .
+\end{gather}\]</span> Suppose we have an infinite, error-free record of
+data, and a correctly specified model structure (composed of parametric
+relationships between variables). Is it possible to obtain a unique
+estimate for each parameter? If not, and if alternative parameter
+estimates produce very different predictions, we cannot make predictions
+with confidence. This may cause our study to be an unproductive use of
+time, effort, and resources.</p>
+<p>I have considered the problem for model structures used in various
+biological settings.</p>
+<h2
+id="analysis-of-linear-switching-systems-representing-e.g.-biosensor-data">Analysis
+of linear switching systems representing (e.g.) biosensor data:
+<br></h2>
+<p>Optical biosensor experiments<a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a> provide a means of
+indirectly observing the interactions of biomolecular species in real
+time. The experimental setup features an <em>immobilised analyte</em>
+bound to a sensor surface, and an <em>analyte</em> in solution made to
+flow over this surface. A series of “kinetic” experiments aim to
+determine the rate constants of interactions. Experiments typically
+consist of two or more phases, delineated by a change in experimental
+conditions. For example, in the <em>association</em> phase, some
+concentration of analyte is made to flow over the surface for a
+specified time. In the <em>dissociation</em> phase, the solution is
+changed to buffer (zero analyte concentration).</p>
+<p>In certain cases, the experimental output is appropriately modelled
+by a linear switching system (LSS). A LSS is a collection of linear
+time-invariant state-space systems, with a switch that determines which
+system is in effect at each time point. A schematic of the LSS output is
+shown in Figure <a href="#fig:BIAcore-response-sample">2</a> below.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:BIAcore-response-sample"></span>
 <img src="BIA-usual-graphV2.png" alt="A schematic of optical biosensor response for an experiment of tho phases, with the change in injected analyte concentration shown." width="0.75\linewidth" />
 <p class="caption">
-Figure 2: A schematic of optical biosensor response for an experiment of tho phases, with the change in injected analyte concentration shown.
+Figure 2: A schematic of optical biosensor response
+for an experiment of tho phases, with the change in injected analyte
+concentration shown.
 </p>
 </div>
 </div>
-<p>As standard methods in identifiability testing and parameter estimation are not appropriate for an LSS structure, it is necessary to design other methods.</p>
-<p>See the abstract of my PhD thesis:<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> <br> <a href="https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society/article/global-a-priori-identifiability-of-models-of-flowcell-optical-biosensor-experiments/E2514E38B97CACCAAA6578E26A2029F5#fndtn-metrics">“Global <em>a priori</em> identifiability of models of flow-cell optical biosensor experiments”</a>, Bulletin of the Australian Mathematical Society 98, no. 2 (2018): 350-352.</p>
+<p>As standard methods in identifiability testing and parameter
+estimation are not appropriate for an LSS structure, it is necessary to
+design other methods.</p>
+<p>See the abstract of my PhD thesis:<a href="#fn2" class="footnote-ref"
+id="fnref2" role="doc-noteref"><sup>2</sup></a> <br> <a
+href="https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society/article/global-a-priori-identifiability-of-models-of-flowcell-optical-biosensor-experiments/E2514E38B97CACCAAA6578E26A2029F5#fndtn-metrics">“Global
+<em>a priori</em> identifiability of models of flow-cell optical
+biosensor experiments”</a>, Bulletin of the Australian Mathematical
+Society 98, no. 2 (2018): 350-352.</p>
 <h3 id="publications">Publications</h3>
-<h4 id="recent-publications-on-identifiability-analysis">Recent publications on identifiability analysis</h4>
+<h4 id="recent-publications-on-identifiability-analysis">Recent
+publications on identifiability analysis</h4>
 <ul>
-<li><p>Whyte, Jason M. <a href="https://doi.org/10.1007/978-3-030-81698-8_27"><strong>“Branching out into Structural Identifiability Analysis with Maple: Interactive Exploration of Uncontrolled Linear Time-Invariant Structures.”</strong></a> in “Maple in Mathematics Education and Research. MC 2020”, pp. 410–428, 2021. Communications in Computer and Information Science, vol 1414. Springer, Cham. (The arXiv preprint is available <a href="https://arxiv.org/abs/2103.11309">here</a>)</p></li>
-<li><p>Whyte, Jason M. <a href="https://doi.org/10.1007/978-3-030-62497-2_10"><strong>“Model Structures and Structural Identifiability: What? Why? How?”</strong></a>, in 2019-20 MATRIX Annals, MATRIX Book Series, 2021, 185–213.</p></li>
+<li><p>Whyte, Jason M. <a
+href="https://doi.org/10.1007/978-3-030-81698-8_27"><strong>“Branching
+out into Structural Identifiability Analysis with Maple: Interactive
+Exploration of Uncontrolled Linear Time-Invariant
+Structures.”</strong></a> in “Maple in Mathematics Education and
+Research. MC 2020”, pp. 410–428, 2021. Communications in Computer and
+Information Science, vol 1414. Springer, Cham. (The arXiv preprint is
+available <a href="https://arxiv.org/abs/2103.11309">here</a>)</p></li>
+<li><p>Whyte, Jason M. <a
+href="https://doi.org/10.1007/978-3-030-62497-2_10"><strong>“Model
+Structures and Structural Identifiability: What? Why?
+How?”</strong></a>, in 2019-20 MATRIX Annals, MATRIX Book Series, 2021,
+185–213.</p></li>
 </ul>
-<h4 id="recent-publications-on-aspects-of-disease-modelling">Recent publications on aspects of disease modelling</h4>
+<h4 id="recent-publications-on-aspects-of-disease-modelling">Recent
+publications on aspects of disease modelling</h4>
 <ul>
-<li><p>Zaloumis, Sophie G., Jason M. Whyte, Joel Tarning, Sanjeev Krishna, James M. McCaw, Pengxing Cao, Michael T. White et al. <a href="https://doi.org/10.1128/AAC.02346-20"><strong>“Development and validation of an in silico decision-tool to guide optimisation of intravenous artesunate dosing regimens for severe falciparum malaria patients.”</strong></a>, Antimicrobial Agents and Chemotherapy 65, no. 6 (2021).</p></li>
-<li><p>Alahmadi, Amani, Sarah Belet, Andrew Black, Deborah Cromer, Jennifer A. Flegg, Thomas House, Pavithra Jayasundara et al. <a href="https://doi.org/10.1016/j.epidem.2020.100393"><strong>“Influencing public health policy with data-informed mathematical models of infectious diseases: Recent developments and new challenges.”</strong></a>, Epidemics 32 (2020): 100393.</p></li>
+<li><p>Zaloumis, Sophie G., Jason M. Whyte, Joel Tarning, Sanjeev
+Krishna, James M. McCaw, Pengxing Cao, Michael T. White et al. <a
+href="https://doi.org/10.1128/AAC.02346-20"><strong>“Development and
+validation of an in silico decision-tool to guide optimisation of
+intravenous artesunate dosing regimens for severe falciparum malaria
+patients.”</strong></a>, Antimicrobial Agents and Chemotherapy 65, no. 6
+(2021).</p></li>
+<li><p>Alahmadi, Amani, Sarah Belet, Andrew Black, Deborah Cromer,
+Jennifer A. Flegg, Thomas House, Pavithra Jayasundara et al. <a
+href="https://doi.org/10.1016/j.epidem.2020.100393"><strong>“Influencing
+public health policy with data-informed mathematical models of
+infectious diseases: Recent developments and new
+challenges.”</strong></a>, Epidemics 32 (2020): 100393.</p></li>
 </ul>
 <h3 id="code-contributions">Code contributions</h3>
 <h4 id="maple">Maple</h4>
 <ul>
-<li><p>Whyte, J. M., <a href="https://maple.cloud/app/5312540069855232/Maple+2020+procedures+and+a+dashboard+for+interactive+testing+of+uncontrolled+linear-time-invariant+structures+for+structural+global+identifiability"><strong>“Maple 2020 procedures and a dashboard for interactive testing of uncontrolled linear-time-invariant structures for structural global identifiability”</strong></a>, available online March 31st 2021.</p></li>
-<li><p>Whyte, J. M., <a href="https://maple.cloud/app/5380800117211136/Drawing+a+compartmental+diagram+for+an+uncontrolled+linear%2C+time-invariant+structure"><strong>“Drawing a compartmental diagram for an uncontrolled linear, time-invariant structure”</strong></a>, software for Maple Conference 2020, Dec 30 2020.</p></li>
+<li><p>Whyte, J. M., <a
+href="https://maple.cloud/app/5312540069855232/Maple+2020+procedures+and+a+dashboard+for+interactive+testing+of+uncontrolled+linear-time-invariant+structures+for+structural+global+identifiability"><strong>“Maple
+2020 procedures and a dashboard for interactive testing of uncontrolled
+linear-time-invariant structures for structural global
+identifiability”</strong></a>, available online March 31st
+2021.</p></li>
+<li><p>Whyte, J. M., <a
+href="https://maple.cloud/app/5380800117211136/Drawing+a+compartmental+diagram+for+an+uncontrolled+linear%2C+time-invariant+structure"><strong>“Drawing
+a compartmental diagram for an uncontrolled linear, time-invariant
+structure”</strong></a>, software for Maple Conference 2020, Dec 30
+2020.</p></li>
 </ul>
 <h4 id="r-shiny-apps">R Shiny Apps</h4>
 <ul>
-<li>Whyte, J. M., <a href="https://jmwhyte.shinyapps.io/4parameter_simple-bimolecular-int_ex/?_ga=2.124313731.802085833.1600240688-835245775.1600240688"><strong>“An illustration of parameter value non-uniqueness for a model used to describe Biacore biosensor data obtained under a four-parameter form of the ‘simple bimolecular’ interaction”</strong></a></li>
+<li>Whyte, J. M., <a
+href="https://jmwhyte.shinyapps.io/4parameter_simple-bimolecular-int_ex/?_ga=2.124313731.802085833.1600240688-835245775.1600240688"><strong>“An
+illustration of parameter value non-uniqueness for a model used to
+describe Biacore biosensor data obtained under a four-parameter form of
+the ‘simple bimolecular’ interaction”</strong></a></li>
 </ul>
-<h3 id="talks-and-posters-on-identifiability-analysis">Talks and posters on identifiability analysis</h3>
-<p><a href="https://www.youtube.com/watch?v=LX4A9Yq1qnY"><strong>“My Enemy, My Ally: how useful is this mathematical model?”</strong></a>, talk presented at the ARC Centre of Excellence for Mathematical &amp; Statistical Frontiers (ACEMS) Early-Career Researcher Retreat, November 3rd, 2020. <br> <em>Talk begins with a brief comparison of mathematics and science fiction.</em></p>
-<p><strong>“Branching out into structural identifiability analysis with Maple”</strong>, Maple Conference 2020 (online), Nov 2nd 2020.</p>
-<p><strong>“Frustrated mathematical modelling and changeable destinies: Structural identifiability analysis of models to support useful results”</strong>, Seminario de Investigación Interdisciplinar para la Innovación en Ciencia y Tecnología, (SICTE Interdisciplinary research, Catholic University of the North, Chile), invited oral presentation online, Oct 20th 2020.</p>
-<p><strong>“An introduction to the testing of model structures for global a priori identifiability (with examples drawn from Plasmodium falciparum malaria modelling)”</strong>, invited oral presentation for Influencing Public Health Policy with Data-informed Mathematical Models of Infectious Diseases, Creswick, Victoria, July 1st 2019.</p>
-<p><strong>“Biological modelling, and rarely asked questions of the 21st century”</strong>, poster presentation, BioInfoSummer, University of Western Australia, Perth, December 3rd 2018.</p>
-<p><strong>“Biological modelling, and rarely asked questions of the 21st century”</strong>, poster presentation, Australian Bioinformatics and Computational Biology Society Conference, Melbourne, November 26th 2018.</p>
+<h3 id="talks-and-posters-on-identifiability-analysis">Talks and posters
+on identifiability analysis</h3>
+<p><strong>Approaches to analysing jump dynamical systems in
+biomolecular kinetics (and elsewhere?)“</strong>, talk presented at the
+ANZIAM Mathematical Biology Special Interest Group (MBSIG) meeting,
+February 14th, 2022.</p>
+<p><a
+href="https://sites.google.com/view/dsabns2022/scientific-programme/book-of-abstracts"><strong>“Structural
+identifiability analysis for switching system structures: towards a
+toolkit for changing times”</strong></a>, talk presented at Dynamical
+Systems Applied to Biology and Natural Sciences (DSABNS 2022 Virtual),
+February 10th, 2022. (DSABNS Contributed Talk Award.)</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:DSABNSaward"></span>
+<img src="JasonWhyte_DSABNS.jpg" alt="Hot off the virtual press..." width="0.75\linewidth" />
+<p class="caption">
+Figure 3: Hot off the virtual press…
+</p>
+</div>
+</div>
+<p><a
+href="https://www.maplesoft.com/mapleconference/2021/pdfs/MC2021-Event-Guide.pdf"><strong>“Numerical
+investigation of structural minimality for structures of uncontrolled
+linear switching systems with Maple”</strong></a>, talk presented at the
+Maple Conference 2021 (virtual), November 2021.</p>
+<p><a href="https://www.youtube.com/watch?v=LX4A9Yq1qnY"><strong>“My
+Enemy, My Ally: how useful is this mathematical model?”</strong></a>,
+talk presented at the ARC Centre of Excellence for Mathematical &amp;
+Statistical Frontiers (ACEMS) Early-Career Researcher Retreat, November
+3rd, 2020. <br> <em>Talk begins with a brief comparison of mathematics
+and science fiction.</em></p>
+<p><strong>“Branching out into structural identifiability analysis with
+Maple”</strong>, Maple Conference 2020 (online), Nov 2nd 2020.</p>
+<p><strong>“Frustrated mathematical modelling and changeable destinies:
+Structural identifiability analysis of models to support useful
+results”</strong>, Seminario de Investigación Interdisciplinar para la
+Innovación en Ciencia y Tecnología, (SICTE Interdisciplinary research,
+Catholic University of the North, Chile), invited oral presentation
+online, Oct 20th 2020.</p>
+<p><strong>“An introduction to the testing of model structures for
+global a priori identifiability (with examples drawn from Plasmodium
+falciparum malaria modelling)”</strong>, invited oral presentation for
+Influencing Public Health Policy with Data-informed Mathematical Models
+of Infectious Diseases, Creswick, Victoria, July 1st 2019.</p>
+<p><strong>“Biological modelling, and rarely asked questions of the 21st
+century”</strong>, poster presentation, BioInfoSummer, University of
+Western Australia, Perth, December 3rd 2018.</p>
+<p><strong>“Biological modelling, and rarely asked questions of the 21st
+century”</strong>, poster presentation, Australian Bioinformatics and
+Computational Biology Society Conference, Melbourne, November 26th
+2018.</p>
 <h4 id="work-in-progress">Work in progress</h4>
-<p>Whyte, J. M. <strong>“Structural minimality of linear swtiching system structres, as motivated by flow-cell optical biosensors and biomolecular interactions”</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<section class="footnotes" role="doc-endnotes">
+<p>Whyte, J. M. <strong>“Structural minimality of linear swtiching
+system structres, as motivated by flow-cell optical biosensors and
+biomolecular interactions”</strong></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>For a cool video introduction, look <a href="https://www.youtube.com/watch?v=h6z_1rAaduE&amp;t=9s">here</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>Won’t you?<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>For a cool video introduction, look
+<a
+href="https://www.youtube.com/watch?v=h6z_1rAaduE&amp;t=9s">here</a><a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Won’t you?<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--radix_placeholder_article_footer-->
@@ -2199,8 +2335,13 @@ Figure 2: A schematic of optical biosensor response for an experiment of tho pha
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>© Copyright 2018 <a href="https://github.com/distillpub/template/blob/master/AUTHORS">The Distill Template Authors</a> and <a href="https://www.rstudio.com">RStudio, Inc</a>.</p>
-<p>Software licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, v2.0</a>.</p>
+<p>© Copyright 2018 <a
+href="https://github.com/distillpub/template/blob/master/AUTHORS">The
+Distill Template Authors</a> and <a
+href="https://www.rstudio.com">RStudio, Inc</a>.</p>
+<p>Software licensed under the <a
+href="https://www.apache.org/licenses/LICENSE-2.0">Apache License,
+v2.0</a>.</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 

@@ -455,7 +455,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -2036,7 +2036,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.8.5/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2105,10 +2105,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 <p><p>The (developing) website of Jason M. Whyte, PhD. <br></p>
-<p>I’m an Australian applied mathematician with varied analytical and computational interests, driven by applications.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <br></p>
-<p><span style="color:DarkGoldenrod;"> Why ‘Synthesis’? </span> <br> I’m an inter-disciplinary researcher, always on the lookout for good ideas from other fields. <br></p>
+<p>I’m an Australian applied mathematician with varied analytical and
+computational interests, driven by applications.<a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+<br></p>
+<p><span style="color:DarkGoldenrod;"> Why ‘Synthesis’? </span> <br> I’m
+an inter-disciplinary researcher, always on the lookout for good ideas
+from other fields. <br></p>
 <p>My projects have led to new methodologies and software. <br></p>
-<p>People seem easily discouraged by maths. So, I aim to present my work in talks and posters in a manner that combines information with a memorable flourish. <br> Perhaps you saw my poster with a “jigsaw”, or the one with a 3D-printed error surface?<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></p>
+<p>People seem easily discouraged by maths. So, I aim to present my work
+in talks and posters in a manner that combines information with a
+memorable flourish. <br> Perhaps you saw my poster with a “jigsaw”, or
+the one with a 3D-printed error surface?<a href="#fn2"
+class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a></p></p>
 </div>
 
 
@@ -2116,20 +2126,61 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!-- # I broadly divide my interdisciplinary interests into three areas. -->
 <!-- # <span style="color:blue;">"Environmental Data Science":</span> In recent work^[Centre for Environmental and Economic Research, University of Melbourne] I've considered the emergence of chemicals adversely affecting humans or the environment. I've used web-scraping, text mining, dynamic networks, and time series analysis in attempting to anticipate such emergence. -->
 <!-- # <span style="color:blue;">"Health and Statistics:"</span> Modelling to understand disease progression. -->
-<h2 id="my-main-research-interests-include-aspects-of">My main research interests include<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> aspects of: <br></h2>
+<h2 id="my-main-research-interests-include-aspects-of">My main research
+interests include<a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a> aspects of: <br></h2>
 <h3 id="mathematical-biology">Mathematical Biology</h3>
-<p><strong>Biological modelling:</strong> I’ve considered biochemical systems and human biomarker concentration time series.<br> The broad question here is: <br> <span style="color: DarkGoldenrod;"> <em>Ιf we can propose a model structure (collection of related models) to represent a physical system, can we control the system, or predict its behaviour?</em> </span></p>
-<p><a href="http://127.0.0.1:40279/rmd_output/4/MathBio.html#structural-global-identifiability-sgi-problems"><strong>Model structure analysis:</strong></a> success in modelling may be determined by the nature of the model structure we use. More data and better quality data may not remedy a study destined to fail due to undesirable model properties. <br> <span style="color: DarkGoldenrod;"> <em>If estimation of model parameters leads to multiple values that are equally feasible, what does this mean?</em> </span> <br> (Hint: problems with reproducibility of results are possible. If alternative parameter estimates lead the model structure to produce dissimilar predictions, we cannot predict system behaviour with confidence.) However, we can anticipate this type of problem prior to data collection through interrogating the assumed model structure.</p>
-<h3 id="emerging-chemical-pollutants"><a href="http://127.0.0.1:40279/rmd_output/4/EmergingChems.html">Emerging Chemical Pollutants</a></h3>
-<p>We could call these projects<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> “Environmental Data Science”. Consider the PFAS (per- and poly-fluoroalkyl substances), which entered into widespread use. Some of these chemicals were then found to have adverse effects on human and environmental health. Regulators must now reactively manage this problem. <br> <span style="color: DarkGoldenrod;"> <em>How can mathematics and statistics give regulators advance warning of tomorrow’s nightmares?</em> </span> <br> To gain a sense of the scale of the problem with PFAS “forever chemicals”: <a href="https://www.theguardian.com/us-news/2021/feb/23/pfas-testing-forever-chemicals-household-water-cat">see this investigation by Tom Perkins, published in The Guardian</a> on February 24th 2021.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<section class="footnotes" role="doc-endnotes">
+<p><strong>Biological modelling:</strong> I’ve considered biochemical
+systems and human biomarker concentration time series.<br> The broad
+question here is: <br> <span style="color: DarkGoldenrod;"> <em>Ιf we
+can propose a model structure (collection of related models) to
+represent a physical system, can we control the system, or predict its
+behaviour?</em> </span></p>
+<p><a
+href="http://127.0.0.1:40279/rmd_output/4/MathBio.html#structural-global-identifiability-sgi-problems"><strong>Model
+structure analysis:</strong></a> success in modelling may be determined
+by the nature of the model structure we use. More data and better
+quality data may not remedy a study destined to fail due to undesirable
+model properties. <br> <span style="color: DarkGoldenrod;"> <em>If
+estimation of model parameters leads to multiple values that are equally
+feasible, what does this mean?</em> </span> <br> (Hint: problems with
+reproducibility of results are possible. If alternative parameter
+estimates lead the model structure to produce dissimilar predictions, we
+cannot predict system behaviour with confidence.) However, we can
+anticipate this type of problem prior to data collection through
+interrogating the assumed model structure.</p>
+<h3 id="emerging-chemical-pollutants"><a
+href="http://127.0.0.1:40279/rmd_output/4/EmergingChems.html">Emerging
+Chemical Pollutants</a></h3>
+<p>We could call these projects<a href="#fn4" class="footnote-ref"
+id="fnref4" role="doc-noteref"><sup>4</sup></a> “Environmental Data
+Science”. Consider the PFAS (per- and poly-fluoroalkyl substances),
+which entered into widespread use. Some of these chemicals were then
+found to have adverse effects on human and environmental health.
+Regulators must now reactively manage this problem. <br> <span
+style="color: DarkGoldenrod;"> <em>How can mathematics and statistics
+give regulators advance warning of tomorrow’s nightmares?</em> </span>
+<br> To gain a sense of the scale of the problem with PFAS “forever
+chemicals”: <a
+href="https://www.theguardian.com/us-news/2021/feb/23/pfas-testing-forever-chemicals-household-water-cat">see
+this investigation by Tom Perkins, published in The Guardian</a> on
+February 24th 2021.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>I also quite like footnotes.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>No? Perhaps I shall add them to the appropriate tab in the near future.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>sometimes unpopular<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p>at the Centre for Environmental and Economic Research, University of Melbourne<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>I also quite like footnotes.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>No? Perhaps I shall add them to the
+appropriate tab in the near future.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>sometimes unpopular<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>at the Centre for Environmental and
+Economic Research, University of Melbourne<a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--radix_placeholder_article_footer-->
@@ -2147,8 +2198,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>© Copyright 2018 <a href="https://github.com/distillpub/template/blob/master/AUTHORS">The Distill Template Authors</a> and <a href="https://www.rstudio.com">RStudio, Inc</a>.</p>
-<p>Software licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, v2.0</a>.</p>
+<p>© Copyright 2018 <a
+href="https://github.com/distillpub/template/blob/master/AUTHORS">The
+Distill Template Authors</a> and <a
+href="https://www.rstudio.com">RStudio, Inc</a>.</p>
+<p>Software licensed under the <a
+href="https://www.apache.org/licenses/LICENSE-2.0">Apache License,
+v2.0</a>.</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 

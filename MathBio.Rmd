@@ -65,6 +65,19 @@ See the abstract of my PhD thesis:^[Won't you?] <br>
 
 ### Talks and posters on identifiability analysis
 
+
+**Approaches to analysing jump dynamical systems in biomolecular kinetics (and elsewhere?)"**, talk
+presented at the ANZIAM Mathematical Biology Special Interest Group (MBSIG) meeting, February 14th, 2022.
+
+[**"Structural identifiability analysis for switching system structures: towards a toolkit for changing times"**](https://sites.google.com/view/dsabns2022/scientific-programme/book-of-abstracts), talk presented at Dynamical Systems Applied to Biology and Natural Sciences (DSABNS 2022 Virtual), February 10th, 2022.
+(DSABNS Contributed Talk Award.)
+
+```{r DSABNSaward, fig.align="center", fig.cap='Hot off the virtual press...', out.width='0.75\\linewidth', fig.pos='H'}
+knitr::include_graphics("JasonWhyte_DSABNS.jpg")
+```
+
+[**"Numerical investigation of structural minimality for structures of uncontrolled linear switching systems with Maple"**](https://www.maplesoft.com/mapleconference/2021/pdfs/MC2021-Event-Guide.pdf), talk presented at the Maple Conference 2021 (virtual), November 2021.
+
 [**"My Enemy, My Ally: how useful is this mathematical model?"**](https://www.youtube.com/watch?v=LX4A9Yq1qnY), talk presented at the ARC Centre of Excellence for Mathematical & Statistical Frontiers (ACEMS) Early-Career Researcher Retreat, November 3rd, 2020. <br>
 _Talk begins with a brief comparison of mathematics and science fiction._
 
