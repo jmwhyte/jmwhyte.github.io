@@ -47,5 +47,3 @@ However, we can anticipate this type of problem prior to data collection through
 We could call these projects^[at the Centre for Environmental and Economic Research, University of Melbourne] "Environmental Data Science". Consider the PFAS (per- and poly-fluoroalkyl substances), which entered into widespread use. Some of these chemicals were then found to have adverse effects on human and environmental health. Regulators must now reactively manage this problem. <br>
 <span style="color: DarkGoldenrod;"> _How can mathematics and statistics give regulators advance warning of tomorrow's nightmares?_ </span> <br>
 To gain a sense of the scale of the problem with PFAS "forever chemicals": [see this investigation by Tom Perkins, published in The Guardian](https://www.theguardian.com/us-news/2021/feb/23/pfas-testing-forever-chemicals-household-water-cat) on February 24th 2021.
-
-  
