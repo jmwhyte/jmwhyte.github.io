@@ -45,6 +45,8 @@ See the abstract of my PhD thesis:^[Won't you?] <br>
 ### Publications 
 #### Recent publications on identifiability analysis
 
+* Whyte, Jason [**"Monte Carlo investigation of structural minimality for structures of uncontrolled linear switching systems with Maple"**](https://doi.org/10.5206/mt.v2i1.14385) in Maple Transactions **2**(1), 2022. (The interactive Maple worksheet is [**here**](https://maple.cloud/app/5716410599997440/MT+14385%3A+Whyte?key=82D39EEA313E45268E492186952F37D42FF3C9E5E0984C73A5FFDB1729CFD593))
+
 * Whyte, Jason M. [**"Branching out into Structural Identifiability Analysis with Maple: Interactive Exploration of Uncontrolled Linear Time-Invariant Structures."**](https://doi.org/10.1007/978-3-030-81698-8_27) in "Maple in Mathematics Education and Research. MC 2020", pp. 410--428, 2021. Communications in Computer and Information Science, vol 1414. Springer, Cham. (The arXiv preprint is available [here](https://arxiv.org/abs/2103.11309)) 
 
 * Whyte, Jason M. [**"Model Structures and Structural Identifiability: What? Why? How?"**](https://doi.org/10.1007/978-3-030-62497-2_10), in 2019-20 MATRIX Annals, MATRIX Book Series, 2021, 185–213.
